@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Widget Menu Aplikasi</title>
+  <title>MARKETBLAST - Tools riset dan optimasi business online</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
   
@@ -145,7 +145,7 @@
     .app-item i {
       font-size: 18px;
       margin-bottom: 8px;
-      color: #007bff;
+      color: #ffd700;
     }
 
     .app-name {
@@ -324,11 +324,12 @@
     
     .social-widget {
       position: fixed;
-      top: 30%;
+      top: 35%;
       left: 0;
       z-index: 1000;
       display: flex;
       flex-direction: column;
+      
     }
 
     .social-widget a {
@@ -342,6 +343,7 @@
       text-decoration: none;
       border-radius: 4px 0 0 4px;
       transition: background 0.3s;
+      
     }
 
     .social-widget a:hover {
@@ -350,29 +352,80 @@
 
     .social-widget a.telegram { background: #0088cc; }
     .social-widget a.instagram { background: #E1306C; }
-    .social-widget a.facebook { background: #3b5998; }
+    .social-widget a.facebook { background: #008000; }
+  
+  
+  .snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+  }
+  
+  @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running;text-shadow:0 0 5px #fff;filter:blur(0.2px);}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+  
+  
+  blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.img {
+  position: center;
+}
   </style>
+  
+
+  
 </head>
 <body>
   <div class="social-widget">
-    <a href="https://t.me/username" class="telegram" target="_blank">Telegram</a>
-    <a href="https://instagram.com/username" class="instagram" target="_blank">Instagram</a>
-    <a href="https://facebook.com/username" class="facebook" target="_blank">Facebook</a>
+    <a href="#" class="telegram" target="_blank">    <i class="fas fa-handshake"></i>  TRUSTED    <i class="fas fa-check-to-slot"></i>
+        </a>
+    <a href="#" class="instagram" target="_blank">100% GUARANTE <i class="fas fa-medal"></i></a>
+    <a href="#" class="facebook" target="_blank">10K+ User Active      <blink><i class="fas fa-users"></i></blink></a>
   </div>
   
   
     <div class="notification" id="onlineNotif">
-    <img src="" alt="User" id="userAvatar">
+    <img src="bgimage.jpg" alt="User" id="userAvatar">
     <div><strong id="userName"></strong> sedang online sekarang</div>
   </div>
   
   <script>
     const members = [
-      { name: "Andi", avatar: "https://i.pravatar.cc/150?img=1" },
-      { name: "Siti", avatar: "https://i.pravatar.cc/150?img=2" },
-      { name: "Budi", avatar: "https://i.pravatar.cc/150?img=3" },
-      { name: "Rina", avatar: "https://i.pravatar.cc/150?img=4" },
-      { name: "Joko", avatar: "https://i.pravatar.cc/150?img=5" },
+      { name: "Andi", avatar: "logomb.png" },
+      { name: "Siti", avatar: "logomb.png" },
+      { name: "Budi", avatar: "logomb.png" },
+      { name: "Rina", avatar: "logomb.png" },
+      { name: "Joko", avatar: "logomb.png" },
+      { name: "Andi", avatar: "logomb.png" },
+      { name: "Siti", avatar: "logomb.png" },
+      { name: "Budi", avatar: "logomb.png" },
+      { name: "Rina", avatar: "logomb.png" },
+      { name: "Joko", avatar: "logomb.png" },
+      { name: "Andi", avatar: "logomb.png" },
+      { name: "Siti", avatar: "logomb.png" },
+      { name: "Budi", avatar: "logomb.png" },
+      { name: "Rina", avatar: "logomb.png" },
+      { name: "Joko", avatar: "logomb.png" },
+      { name: "Andi", avatar: "logomb.png" },
+      { name: "Siti", avatar: "logomb.png" },
+      { name: "Budi", avatar: "logomb.png" },
+      { name: "Rina", avatar: "logomb.png" },
+      { name: "Joko", avatar: "logomb.png" },
+      
     ];
 
     let currentIndex = 0;
@@ -404,7 +457,7 @@
   </script>
   
       
-
+  <center><img src="bannerlogo.gif" width="350" height="40"></center>
   <br>
       <h3>⭐TRENDING SHOP APPS⭐</h3>
   <marquee bgcolor="cyan" scrollamount="2">⭐ TIKTOK ⭐ SHOPEE ⭐ TOKOPEDIA ⭐ LAZADA ⭐ FACEBOOK ⭐</marquee>
@@ -436,26 +489,27 @@
     STREAMING</div>
   </a>
   <a href="#" class="app-item">
-    <i class="fas fa-user-friends"></i>
-    <div class="app-name">Kontak</div>
+    <i class="fas fa-users"></i>
+    <div class="app-name">MEMBER BLAST</div>
   </a>
   <a href="#" class="app-item">
     <i class="fas fa-cloud"></i>
     <div class="app-name">Cloud</div>
   </a>
   <a href="#" class="app-item">
-    <i class="fas fa-chart-line"></i>
-    <div class="app-name">Analitik</div>
+    <i class="fas fa-globe"></i>
+    <div class="app-name">WEBSITE</div>
   </a>
   <a href="#" class="app-item">
-    <i class="fas fa-cog"></i>
-    <div class="app-name">Pengaturan</div>
+    <i class="fas fa-hand-holding-dollar"></i>
+    <div class="app-name">PRICE LIST</div>
   </a>
   <a href="#" class="app-item">
-    <i class="fas fa-cog"></i>
-    <div class="app-name">Pengaturan</div>
+    <i class="fab fa-gofore"></i>
+    <i class="fa fa-comments"></i>
+    <div class="app-name">GO FORUM BLAST</div>
   </a>
-  <a href="#" class="app-item">
+  <a href="https://introapp-me.github.io/teamsupport.id/" class="app-item">
     <i class="fas fa-user-group"></i>
     <div class="app-name">TEAM SUPPORT</div>
   </a>
@@ -490,31 +544,31 @@
     <div class="wa-menu" id="waMenu">
       <a href="https://wa.me/6281234567890" target="_blank">
         <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" class="wa-icon" />
-        Customer Service
+        Contact Developer
       </a>
       <a href="https://wa.me/6281234567891" target="_blank">
         <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" class="wa-icon" />
-        Sales
+        Customer Service
       </a>
       <a href="https://wa.me/6281234567892" target="_blank">
         <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" class="wa-icon" />
-        Admin
+        Admin 1
       </a>
       <a href="https://wa.me/6281234567893" target="_blank">
         <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" class="wa-icon" />
-        Bantuan Teknis
+        Admin 2
       </a>
       <a href="https://wa.me/6281234567893" target="_blank">
         <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" class="wa-icon" />
-        Bantuan Teknis
+        Server 1
       </a>
       <a href="https://wa.me/6281234567893" target="_blank">
         <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" class="wa-icon" />
-        Bantuan Teknis
+        Server 2
       </a>
       <a href="https://wa.me/6281234567893" target="_blank">
         <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" class="wa-icon" />
-        Bantuan Teknis
+        Server 3
       </a>
       <a href="https://wa.me/6281234567893" target="_blank">
         <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" class="wa-icon" />
@@ -533,7 +587,7 @@
   window.onload = function() {
     setTimeout(function() {
       document.getElementById('popup').style.display = 'flex';
-    }, 5000);
+    }, 3000);
   }
 
   // Fungsi untuk menutup popup
@@ -561,6 +615,20 @@
       document.getElementById(`${type}-count`).innerText = reactions[type];
     }
   </script>
-
+  
+  
+  
+<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake"><img src="tokopedia.png" width="20" height="20"></div>
+  <div class="snowflake"><img src="facebook.png" width="20" height="20"></div>
+  <div class="snowflake"><img src="lazada.png" width="20" height="20"></div>
+  <div class="snowflake"><img src="instagram.png" width="20" height="20"></div>
+  <div class="snowflake"><img src="shopee.png" width="20" height="20"></div>
+  <div class="snowflake"><img src="tiktik.png" width="20" height="20"></div>
+  <div class="snowflake">😍</div>
+  <div class="snowflake">⭐</div>
+  <div class="snowflake">💰</div>
+  <div class="snowflake">🇮🇩</div>
+</div>
 </body>
 </html>
